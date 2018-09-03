@@ -2,9 +2,9 @@
 
 (function (root, factory) {
 	if (typeof exports === 'object') {
-		module.exports = factory(require('moment'));            // Node
+		module.exports = factory(require('moment-timezone'));            // Node
 	} else if (typeof define === 'function' && define.amd) {
-		define('moment-immutable', ['moment'], factory);        // AMD
+		define('moment-immutable', ['moment-timezone'], factory);        // AMD
 	} else {
 		root.moment = factory(root.moment);                     // Browser
 	}
